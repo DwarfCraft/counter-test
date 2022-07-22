@@ -1,0 +1,16 @@
+{
+  "name": "Knitting Counter",
+  "short_name": "Knitting",
+  "description": "Keep track of your knitting projects with this helpful counter",
+  "lang": "en-US",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "maskable_icon.png",
+      "sizes": "196x196",
+      "type": "image/png"
+    }
+  ]
+}
