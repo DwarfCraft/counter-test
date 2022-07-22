@@ -10,4 +10,7 @@
   - Maskable.app Editor can help
 - Copy icons and manifest into `public/`
 - Create `_document.js` and add main HTML elements
+- Create `_offline.js` in the `pages/` directory for offline display
+- `npm run build`
+- `npm start`
 - 
