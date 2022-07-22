@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import {React, useState } from 'react'
+import { useState } from 'react'
+import "./styles/App.css"
 
 export default function Home() {
     const [counter, setCounter] = useState(0);
@@ -11,7 +12,9 @@ export default function Home() {
     };
 
     const decrease = () => {
-        setCounter(count => count - 1);
+        if (counter > 0) {
+            setCounter(count => count - 1);
+        }
     };
 
     const reset = () => {
@@ -33,13 +36,13 @@ export default function Home() {
         <h1 className={styles.title}>
             Counter
         </h1>
-        <span className={styles.card}>
+        <span className="counter__output">
             {counter}
         </span>
-        <div className={styles.title}>
-            <button className={styles.card} onClick={increase}>+</button>
-            <button className={styles.card} onClick={decrease}>-</button>
-            <button className={styles.card} onClick={reset}>Reset</button>
+        <div className="btn__container">
+            <button className="control__btn" onClick={increase}>+</button>
+            <button className="control__btn" onClick={decrease}>-</button>
+            <button className="reset" onClick={reset}>Reset</button>
         </div>
       </main>
       <footer className={styles.footer}>
